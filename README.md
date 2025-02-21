@@ -18,17 +18,17 @@ It started with the format of the JavaDoc comments.
 
 - **AlexStackClass.java**
 
-    No edits were made to AlexStackClass.java.
+    No edits were made to **AlexStackClass.java**.
 
 - **PostfixCalculator.java**
 
-    The only permanent edits made to PostfixCalculator.java were the JavaDoc comments. There were some temporary print statements that I placed so I could follow along with what the code was doing after each iteration.
+    The only permanent edits made to **PostfixCalculator.java** were the JavaDoc comments. There were some temporary print statements that I placed so I could follow along with what the code was doing after each iteration.
 
 - **Main.java**
 
     Picking up from where I left off:
 
-    This file had already been started, but it was never completed. I had all the variables created and set up. The program was passing a pre-defined input of type String from Main.java into PostfixCalculator.java and calling the methods in PostfixCalculator.java.
+    This file had already been started, but it was never completed. I had all the variables created and set up. The program was passing a pre-defined input of type String from **Main.java** into **PostfixCalculator.java** and calling the methods in **PostfixCalculator.java**.
 
     ``totalNumber()``
 
@@ -47,22 +47,22 @@ It started with the format of the JavaDoc comments.
     The technical reason for why it was not working was because the input (operator symbol) was not being registered as a Char or Byte type.
     Why did I want the input to be one of these two types? Whenever I write code, I consider how the input might be exploited to unexpectedly break the program. I had the vision of making the operators be scanned as the Char or Byte type to put a size limit on the input in addition to the input being required to be one of the following symbols: "^ * / + -".
     After repeated failed attempts to make it work with the Char or Byte type, I changed the input to be read as the String type.
-    Changed returnType from LinkedList<String> to String.
+    Changed returnType from ``LinkedList<String>`` to String.
 
     ``equation()``
 
-    Originally consisted of only two lines of code. First line was initializing the variable "expression". The second line was the return statement.
-    Changed returnType from LinkedList<String> to String.
+    Originally consisted of only two lines of code. First line was initializing the variable ``expression``. The second line was the return statement.
+    Changed returnType from ``LinkedList<String>`` to String.
 
 - **Wrapping it up**
 
-    In the end, I decided to change the variable "expression" from a LinkedList<String> to just simply a String, so I could pass it into PostfixCalculator.java.
-    I moved the PostfixCalculator method calls from the main method in Main.java into its own method in Main.java called conversion().
+    In the end, I decided to change the variable ``expression`` from a ``LinkedList<String>`` to just simply a String, so I could pass it into **PostfixCalculator.java**.
+    I moved the PostfixCalculator method calls from the ``main()`` method in **Main.java** into its own method in **Main.java** called ``conversion()``.
     I aligned the print statements to output in a pretty and easy-to-read format.
 
 --------
 
-Example:
+Example Output:
 
     Operands:  [12.0, 4.0, 5.0, 3.0, 12.0, 2.0]
     Operators: [/, ^, +, -, ^]
